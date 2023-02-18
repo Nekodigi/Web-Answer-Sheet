@@ -19,12 +19,15 @@ export const Header = () => {
             <Typography ml={2} css={fontTypes.title} flexGrow={1}>
               Webマークシート
             </Typography>
-            <Button css={fontTypes.body}>
+            <Button
+              css={fontTypes.body}
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdjgdW5jxjGz6q0e_vC8CraA8wk5_k3WrIew6SDcybwv98IWg/viewform?usp=sf_link"
+            >
               <Typography css={fontTypes.body} color="white">
                 ご意見
               </Typography>
             </Button>
-            <Button css={fontTypes.body}>
+            <Button css={fontTypes.body} href="http://nekodigi.com/">
               <Typography css={fontTypes.body} color="white">
                 サイトトップ
               </Typography>

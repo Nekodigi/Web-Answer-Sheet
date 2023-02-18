@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import { Footer } from "../organism/Footer";
 import { Header } from "../organism/Header";
 
 type LayoutProps = {
@@ -9,6 +10,7 @@ export const Layout = ({ children }: LayoutProps) => {
     <div>
       <Header />
       {children}
+      <Footer />
     </div>
   );
 };
