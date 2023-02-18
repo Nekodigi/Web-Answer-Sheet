@@ -23,11 +23,19 @@ export const Header = () => {
               css={fontTypes.body}
               href="https://docs.google.com/forms/d/e/1FAIpQLSdjgdW5jxjGz6q0e_vC8CraA8wk5_k3WrIew6SDcybwv98IWg/viewform?usp=sf_link"
             >
-              <Typography css={fontTypes.body} color="white">
+              <Typography
+                css={fontTypes.body}
+                sx={{ display: { xs: "none", sm: "block" } }}
+                color="white"
+              >
                 ご意見
               </Typography>
             </Button>
-            <Button css={fontTypes.body} href="http://nekodigi.com/">
+            <Button
+              css={fontTypes.body}
+              sx={{ display: { xs: "none", sm: "block" } }}
+              href="http://nekodigi.com/"
+            >
               <Typography css={fontTypes.body} color="white">
                 サイトトップ
               </Typography>
