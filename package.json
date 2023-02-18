@@ -1,5 +1,6 @@
 {
   "name": "web-answer-sheet",
+  "homepage": "https://nekodigi.github.io/Web-Answer-Sheet/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
