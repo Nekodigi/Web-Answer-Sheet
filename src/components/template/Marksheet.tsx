@@ -8,10 +8,12 @@ import { SectionTitle } from "../molecule/SectionTitle";
 import { Delete, Download, Upload, Settings } from "@mui/icons-material";
 import { downloadJson } from "../../utils/func/download";
 import { Confirm } from "../molecule/Confirm";
+import { useTranslation } from "react-i18next";
 
 export const MarkSheet = () => {
   const [ansCount, setAnsCount] = useState(20);
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation(["common", "editor"]);
 
   if (localStorage.getItem("answer") === null)
     localStorage.setItem("answer", JSON.stringify([]));
@@ -46,18 +48,16 @@ export const MarkSheet = () => {
       <Container>
         <SectionTitle
           sxBox={{ mt: 4 }}
-          title="Webマークシートについて"
-          body={
-            "登録不要＆無料でマークシートを10秒で作れる、現役学生が作った学生のためのWebアプリ。\n印刷不要のマークシートで、TOEICの模試など資格試験の勉強をもっと効率的に！"
-          }
+          title={t("about")!}
+          body={t("discription")!}
         />
-        <SectionTitle title={"さっそく作る"} />
+        <SectionTitle title={t("editor:make")!} />
         <Box px={2} pb={2}>
           <Box display="flex" alignItems="center" gap={1}>
             <TextField
               variant="filled"
               color="primary"
-              label="問題数を入力"
+              label={t("editor:n_question")!}
               type="number"
               value={ansCount}
               onChange={(e) =>

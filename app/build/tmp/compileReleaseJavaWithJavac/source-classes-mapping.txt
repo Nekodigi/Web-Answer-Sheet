@@ -1,0 +1,8 @@
+com/nekodigi/webans/twa/Application.java
+ com.nekodigi.webans.twa.Application
+com/nekodigi/webans/twa/BuildConfig.java
+ com.nekodigi.webans.twa.BuildConfig
+com/nekodigi/webans/twa/LauncherActivity.java
+ com.nekodigi.webans.twa.LauncherActivity
+com/nekodigi/webans/twa/DelegationService.java
+ com.nekodigi.webans.twa.DelegationService

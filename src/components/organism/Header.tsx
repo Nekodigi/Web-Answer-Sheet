@@ -10,14 +10,21 @@ import {
 } from "@mui/material";
 import { fontTypes } from "../../utils/style/fonts";
 import { grey } from "@mui/material/colors";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 export const Header = () => {
+  const { t, i18n } = useTranslation("common");
+
+  useEffect(() => {
+    document.title = t("name");
+  }, [i18n.language]);
   return (
     <Box>
       <AppBar sx={{ background: grey[800] }}>
         <Container>
           <Toolbar style={{ minHeight: 53, height: 53 }}>
             <Typography ml={2} css={fontTypes.title} flexGrow={1}>
-              Webマークシート
+              {t("name")!}
             </Typography>
             <Button
               css={fontTypes.body}
@@ -28,7 +35,7 @@ export const Header = () => {
                 sx={{ display: { xs: "none", sm: "block" } }}
                 color="white"
               >
-                ご意見
+                {t("opinion")!}
               </Typography>
             </Button>
             <Button
@@ -37,7 +44,7 @@ export const Header = () => {
               href="http://nekodigi.com/"
             >
               <Typography css={fontTypes.body} color="white">
-                サイトトップ
+                {t("site_top")!}
               </Typography>
             </Button>
           </Toolbar>

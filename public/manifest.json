@@ -1,6 +1,6 @@
 {
-  "short_name": "Webマークシート",
-  "name": "登録不要＆無料でマークシートを10秒で作れる、現役学生が作った学生のためのWebアプリ",
+  "short_name": "Web Answer Sheet",
+  "name": "Web Answer Sheet",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,7 +19,24 @@
     }
   ],
   "start_url": ".",
-  "display": "standalone",
+  "display": "fullscreen",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "scope": "/",
+
+  "description": "Effortlessly create mark sheets in seconds with our free, no-registration web app",
+  "screenshots": [
+    {
+      "src": "/images/screenshot1.png",
+      "type": "image/png",
+      "sizes": "540x720",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/images/screenshot2.jpg",
+      "type": "image/jpg",
+      "sizes": "720x540",
+      "form_factor": "wide"
+    }
+  ]
 }
