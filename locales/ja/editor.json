@@ -1,8 +1,0 @@
-{
-  "make": "さっそく作る",
-  "n_question": "問題数を入力",
-  "delete": {
-    "confirmTitle": "回答を削除しますか？",
-    "confirmDisc": "削除した回答は復元できません。よろしいですか？"
-  }
-}

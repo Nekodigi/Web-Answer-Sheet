@@ -1,8 +1,0 @@
-{
-  "make": "Create Now",
-  "n_question": "Number of Questions",
-  "delete": {
-    "confirmTitle": "Delete answers?",
-    "confirmDisc": "Deleted answers cannot be restored. Do you want to delete it?"
-  }
-}
