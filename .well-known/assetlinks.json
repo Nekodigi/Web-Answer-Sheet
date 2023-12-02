@@ -1,0 +1,14 @@
+[
+    {
+      "relation": [
+        "delegate_permission/common.handle_all_urls"
+      ],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "com.nekodigi.webans.twa",
+        "sha256_cert_fingerprints": [
+          "38:62:D6:D1:14:0E:1A:DB:20:C8:D7:D8:7A:7C:80:9E:16:66:7C:C3:25:8D:7E:03:5A:72:52:5C:14:57:52:1F"
+        ]
+      }
+    }
+  ]
